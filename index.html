@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>시스템 감염됨</title>
+  <style>
+    body {
+      background-color: black;
+      color: red;
+      font-family: "Courier New", monospace;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 48px;
+      animation: blink 1s infinite;
+    }
+    p {
+      font-size: 24px;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        alert("경고: 시스템이 외부 위협에 의해 감염되었습니다!");
+        alert("모든 파일이 암호화되었으며, 복호화를 원할 경우 관리자에게 문의하십시오.");
+        alert("실제 감염은 아니며 보안 교육 목적의 시뮬레이션입니다.");
+      }, 500);
+    };
+  </script>
+</head>
+<body>
+  <h1>⚠️ 시스템 감염 감지 ⚠️</h1>
+  <p>귀하의 컴퓨터는 악성코드에 감염되었습니다.</p>
+  <p>현재 데이터를 암호화 중입니다...</p>
+  <p>창을 닫지 마십시오.</p>
+</body>
+</html>
